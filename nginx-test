@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# Give the full path to nginx rather than worry about paths.
+# WORKSPACE_DIR is a variable that gets passed in with the directory
+# that contains the nginx.conf
+/usr/local/openresty/nginx/sbin/nginx -t -c "${WORKSPACE_DIR}/nginx.conf"
