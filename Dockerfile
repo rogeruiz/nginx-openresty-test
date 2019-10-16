@@ -37,8 +37,3 @@ RUN    wget https://openresty.org/download/openresty-1.15.8.2.tar.gz \
   && make \
   && make install \
   && rm -rf /openresty*
-
-
-COPY nginx-test /usr/local/bin/nginx-test
-
-ENTRYPOINT ["nginx-test"]
