@@ -14,7 +14,7 @@ This Docker image can be used in GitHub Actions by having a local Dockerfile
 such as the following in `.github/actions/nginx-openresty-test`
 
 ```Dockerfile
-FROM rogeruiz/nginx-openresty-test
+FROM rogeruiz/nginx-openresty-test:latest
 
 # This is a local file relative to the Dockerfile named `nginx-test`.
 COPY nginx-test /usr/local/bin/nginx-test
